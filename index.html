@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Frank Chong | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/logo.png" />
+    <!-- favicon-->
+  </head>
+  <body>
+    <!-- ================================= HEADER ========================================= -->
+    <header>
+      <!-- Logo: Top Left -->
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" class="logo-img" />
+        <a
+          href="https://www.linkedin.com/in/frank-chong-26474192/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/LinkedIn.webp" alt="LinkedIn" class="logo-img" />
+          <!--target blank open link new tab & noopener noreferrer prevents controlling and sharing-->
+        </a>
+        <a
+          href="https://github.com/FranKnighto"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/github.png" alt="Github" class="logo-img" />
+        </a>
+        <p>Connects with me here!</p>
+      </div>
+
+      <!-- Nav Bar: Top Right-->
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- =============================== MAIN CONTENT ====================================-->
+    <main>
+      <!-- About Section----->
+      <section id="about">
+        <!-- Profile photo | left -->
+        <div class="profile-container">
+          <img
+            src="assets/FC.png"
+            class="profile-image"
+            alt="My Profile Photo"
+          />
+        </div>
+
+        <!-- Personal Intro | right -->
+        <div class="about-content">
+          <h1>Chong Foh Ming (Frank Chong)</h1>
+
+          <p class="job-title">
+            Junior Software Developer | Kuala Lumpur | C.A.(M), C.P.A.(M)
+          </p>
+
+          <p class="introduction">
+            Re-skilling to be Software Developer, learning HTML, CSS, and
+            JavaScript; was a Finance Manager with expertise in financial
+            forecasting, and compliance, to drive financial efficiency and
+            strategic growth.
+          </p>
+        </div>
+
+        <!---quote----->
+        <article class="quote-box">
+          <p id="quote-text" class="quote-text"></p>
+          <button id="new-quote" onclick="setquote()">New Quote</button>
+        </article>
+      </section>
+
+      <!-- Skills section-->
+      <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <ul class="skill-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>e-invoice</li>
+          <li>AutoCount</li>
+          <li>Ms Excel</li>
+        </ul>
+        <button id="goal-button" type="button" onclick="selection()">
+          Show My Goals
+        </button>
+        <ul class="goal-list" id="goal-list" style="display: none">
+          <li>Career transition from my corporate role into tech</li>
+          <li>
+            Develop necessary such tech skills as HTML, CSS, React, Next.js,
+            API, etc.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Experience Section-->
+      <section id="experience">
+        <h2>Work Experience</h2>
+
+        <div class="experience-container">
+          <div class="experience-card">
+            <div class="experience-details">
+              <h3>Finance Manager</h3>
+              <p>SEEL Electronic & Engineering</p>
+            </div>
+            <span class="experience-period">2019 - 2025</span>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-details">
+              <h3>Finance Manager</h3>
+              <p>MH Global</p>
+            </div>
+            <span class="experience-period">2018 - 2019</span>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-details">
+              <h3>Assistant Finance Manager</h3>
+              <p>Vantage Point Consulting</p>
+            </div>
+            <span class="experience-period">2017 - 2018</span>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-details">
+              <h3>Audit Senior</h3>
+              <p>BDO</p>
+            </div>
+            <span class="experience-period">2014 - 2017</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
